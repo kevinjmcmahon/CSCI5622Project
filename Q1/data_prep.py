@@ -6,6 +6,8 @@ import csv
 import glob
 import numpy as np
 
+#question 1
+
 
 #see if working
 sample_file = "data/test.csv"

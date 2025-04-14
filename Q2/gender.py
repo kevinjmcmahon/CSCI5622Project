@@ -5,18 +5,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
+#Question b
+
+
+
 # sklearn and vaderSentiment for feature extraction
 from sklearn.feature_extraction.text import CountVectorizer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # load file with participant ids, average sentiment, PHQ scores, and gender
-df_agg = pd.read_csv("aggregated_sentiments_with_PHQ_and_gender.csv")
+df_agg = pd.read_csv("Q2/aggregated_sentiments_with_PHQ_and_gender.csv")
 df_agg['participant_id'] = df_agg['participant_id'].astype(str)  # make sure IDs are strings
 print("Aggregated Data (first 5 rows):")
 print(df_agg.head())
 
 # load transcripts (full text) for each participant
-df_transcripts = pd.read_csv("aggregated_transcripts.csv")
+df_transcripts = pd.read_csv("Q2/aggregated_transcripts.csv")
 df_transcripts['participant_id'] = df_transcripts['participant_id'].astype(str)
 print("Aggregated Transcripts (first 5 rows):")
 print(df_transcripts.head())
