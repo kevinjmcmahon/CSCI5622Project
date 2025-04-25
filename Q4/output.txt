@@ -1,5 +1,4 @@
 --- Evaluating top 50 features: ---
-XGBoost Regression - Mean Pearson r: 0.1917, Mean RMSE: 0.3190
 DL Regression – Mean Pearson r: 0.2927, Mean RE: 0.2758
 
 Performance by Gender:
